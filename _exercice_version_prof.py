@@ -26,13 +26,13 @@ def get_bill(name, data):
 		("TOTAL     ", total)
 	]
 	result = name
-	for bd in bill_data:
-		result += "\n" + f"{bd[0]} {bd[1] : >10.2f} $"
+	# for bd in bill_data:
+	# 	result += "\n" + f"{bd[0]} {bd[1] : >10.2f} $"
 
 	# Approche avec répétition de code
-	#result += "\n" + f"SOUS-TOTAL {sum : >10.2f} $"
-	#result += "\n" + f"TAXES      {taxes : >10.2f} $"
-	#result += "\n" + f"TOTAL      {total : >10.2f} $"
+	result += "\n" + f"SOUS-TOTAL {sum : >10.2f} $"
+	result += "\n" + f"TAXES      {taxes : >10.2f} $"
+	result += "\n" + f"TOTAL      {total : >10.2f} $"
 
 	return result
 
